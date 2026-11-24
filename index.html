@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -40,6 +40,7 @@
     <section id="news">
       <h2>News</h2>
       <ul class="news">
+        <li><span class="date">2026.11</span> Completed a machine learning course project on LSTM–Transformer weather forecasting and validation-learned fusion.</li>
         <li><span class="date">2026.11</span> Completed a course research project on evolutionary hyperparameter optimization for multi-layer perceptrons.</li>
       </ul>
     </section>
@@ -68,6 +69,30 @@
           </p>
           <p class="links">
             <a href="https://github.com/LeiPan-JLU/evolutionary-hpo-mlp" target="_blank" rel="noopener">[Code]</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="thumb">
+          <img src="images/weather-fusion.png" alt="Test-set MAE and RMSE for Transformer, LSTM, and fusion models">
+        </div>
+        <div class="project-text">
+          <h3>LSTM–Transformer Fusion for Weather Forecasting</h3>
+          <p class="meta">Course project · Machine Learning · 2026</p>
+          <p>
+            Built a complete hourly temperature forecasting pipeline on the Jena
+            Climate dataset: 72-hour multivariate inputs, 24-hour outputs,
+            chronological 70/10/20 splits, and train-only normalization.
+          </p>
+          <p>
+            An LSTM with time features and residual prediction and an encoder-only
+            Transformer were trained under the same protocol. Validation-learned
+            fusion reduced test MAE to 1.714 °C and RMSE to 2.290 °C, compared with
+            1.785 / 2.396 °C for the Transformer alone.
+          </p>
+          <p class="links">
+            <a href="https://github.com/LeiPan-JLU/lstm-transformer-weather-fusion" target="_blank" rel="noopener">[Code]</a>
           </p>
         </div>
       </article>
