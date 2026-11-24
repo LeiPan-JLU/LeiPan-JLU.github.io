@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --text: #222222;
   --muted: #666666;
   --light: #888888;
@@ -98,6 +98,8 @@ p {
   display: block;
   width: 150px;
   height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   border: 1px solid #e3e3e3;
   border-radius: 50%;
   object-fit: cover;
@@ -227,6 +229,8 @@ footer p {
   .portrait img {
     width: 110px;
     height: 110px;
+    max-width: 110px;
+    max-height: 110px;
   }
 
   h1 {
