@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --text: #222222;
   --muted: #666666;
   --light: #888888;
@@ -94,10 +94,13 @@ p {
   width: 150px;
 }
 
-.portrait svg {
+.portrait img {
   display: block;
   width: 150px;
   height: 150px;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .links {
@@ -221,7 +224,7 @@ footer p {
     width: 110px;
   }
 
-  .portrait svg {
+  .portrait img {
     width: 110px;
     height: 110px;
   }
