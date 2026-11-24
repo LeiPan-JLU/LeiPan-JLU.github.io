@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lei Pan | Artificial Intelligence, Jilin University</title>
+  <meta name="description" content="Lei Pan is an undergraduate student in Artificial Intelligence at Jilin University, interested in evolutionary computation, hyperparameter optimization, and machine learning.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Lei Pan</a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container" id="about">
+      <div class="avatar" aria-hidden="true">LP</div>
+      <div class="hero-text">
+        <p class="eyebrow">Undergraduate in Artificial Intelligence</p>
+        <h1>Lei Pan <span class="cn">潘磊</span></h1>
+        <p class="lead">
+          I am a B.Eng. student at the School of Artificial Intelligence, Jilin University.
+          My interests lie in evolutionary computation, black-box optimization, and
+          machine learning, with a focus on making small neural networks easier to tune
+          under limited computational budgets.
+        </p>
+        <p class="links">
+          <a href="https://github.com/LeiPan-JLU" target="_blank" rel="noopener">GitHub</a>
+          <span aria-hidden="true">·</span>
+          <a href="mailto:LeiPan-JLU@users.noreply.github.com">Email</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/LeiPan-JLU/evolutionary-hpo-mlp" target="_blank" rel="noopener">Project Repository</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="container section" id="education">
+      <div class="section-head">
+        <p class="eyebrow">Education</p>
+        <h2>Jilin University</h2>
+      </div>
+      <div class="card timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2025 – Present</div>
+          <div>
+            <h3>B.Eng. in Artificial Intelligence</h3>
+            <p>School of Artificial Intelligence, Jilin University, Changchun, China.</p>
+            <p class="muted">Coursework: evolutionary computation, machine learning, optimization, programming.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="research">
+      <div class="section-head">
+        <p class="eyebrow">Research Interests</p>
+        <h2>What I am exploring</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Evolutionary Computation</h3>
+          <p>Genetic algorithms, particle swarm optimization, differential evolution, and their parameter adaptation mechanisms.</p>
+        </article>
+        <article class="card">
+          <h3>Hyperparameter Optimization</h3>
+          <p>Expensive black-box search for mixed continuous and integer hyperparameters, with small evaluation budgets.</p>
+        </article>
+        <article class="card">
+          <h3>Machine Learning</h3>
+          <p>Small neural networks, cross-validation, and reproducible experiment design on standard datasets.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section" id="project">
+      <div class="section-head">
+        <p class="eyebrow">Selected Project</p>
+        <h2>Evolutionary Hyperparameter Optimization for MLP</h2>
+      </div>
+      <article class="card project-card">
+        <div class="project-media">
+          <img src="assets/convergence.png" alt="Convergence curves of five hyperparameter search strategies">
+        </div>
+        <div class="project-body">
+          <p>
+            A reproducible comparison of Random Search, real-coded GA, LDIW-PSO,
+            DE/rand/1/bin, and jDE for tuning a two-layer MLP on the scikit-learn
+            <code>digits</code> dataset. The four-dimensional search space mixes
+            learning rate, L2 penalty, and two hidden-layer sizes; the objective is
+            the 5-fold cross-validation error over 20 independent runs.
+          </p>
+          <p>
+            Real-coded GA reached the lowest mean error (0.0213), followed by
+            DE/rand/1/bin (0.0217) and LDIW-PSO (0.0220). jDE's individual parameter
+            adaptation did not outperform fixed-parameter DE at the 400-evaluation
+            budget, which is discussed as a negative result in the project report.
+          </p>
+          <p class="tags">
+            <span>Python</span><span>NumPy</span><span>scikit-learn</span><span>SciPy</span><span>Matplotlib</span>
+          </p>
+          <p class="links">
+            <a href="https://github.com/LeiPan-JLU/evolutionary-hpo-mlp" target="_blank" rel="noopener">View repository →</a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="container section" id="contact">
+      <div class="section-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Get in touch</h2>
+      </div>
+      <div class="card contact-card">
+        <p>I am happy to discuss evolutionary algorithms, hyperparameter optimization, or reproducible machine-learning experiments.</p>
+        <p>
+          <a href="https://github.com/LeiPan-JLU" target="_blank" rel="noopener">github.com/LeiPan-JLU</a>
+          <span aria-hidden="true">·</span>
+          <a href="mailto:LeiPan-JLU@users.noreply.github.com">LeiPan-JLU@users.noreply.github.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Lei Pan · School of Artificial Intelligence, Jilin University</p>
+      <p class="muted">Last updated November 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
