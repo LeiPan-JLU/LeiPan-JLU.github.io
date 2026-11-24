@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --ink: #1f2933;
   --muted: #667085;
   --blue: #1a365d;
@@ -127,13 +127,6 @@ h1, h2, h3 {
 h1 {
   font-size: 44px;
   font-weight: 750;
-}
-
-h1 .cn {
-  color: var(--muted);
-  font-size: 22px;
-  font-weight: 500;
-  margin-left: 8px;
 }
 
 h2 {
