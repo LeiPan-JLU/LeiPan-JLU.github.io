@@ -1,140 +1,125 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lei Pan | Artificial Intelligence, Jilin University</title>
-  <meta name="description" content="Lei Pan is an undergraduate student in Artificial Intelligence at Jilin University, interested in evolutionary computation, hyperparameter optimization, and machine learning.">
+  <meta name="description" content="Lei Pan is an undergraduate student in Artificial Intelligence at Jilin University, interested in evolutionary computation, black-box optimization, and machine learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top">Lei Pan</a>
-      <nav aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#research">Research</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <main class="page">
 
-  <main id="top">
-    <section class="hero container" id="about">
-      <div class="avatar" aria-hidden="true">LP</div>
-      <div class="hero-text">
-        <p class="eyebrow">Undergraduate in Artificial Intelligence</p>
+    <section class="intro" id="about">
+      <div class="intro-text">
         <h1>Lei Pan</h1>
-        <p class="lead">
-          I am a B.Eng. student at the School of Artificial Intelligence, Jilin University.
-          My interests lie in evolutionary computation, black-box optimization, and
-          machine learning, with a focus on making small neural networks easier to tune
-          under limited computational budgets.
+        <p class="subtitle">B.Eng. Student in Artificial Intelligence<br>Jilin University</p>
+        <p>
+          I am an undergraduate student at the School of Artificial Intelligence,
+          Jilin University. My research interests are evolutionary computation,
+          black-box and hyperparameter optimization, and machine learning. I enjoy
+          building small, reproducible experiments that make the behavior of
+          optimization algorithms easier to understand.
         </p>
         <p class="links">
-          <a href="https://github.com/LeiPan-JLU" target="_blank" rel="noopener">GitHub</a>
-          <span aria-hidden="true">·</span>
           <a href="mailto:LeiPan-JLU@users.noreply.github.com">Email</a>
-          <span aria-hidden="true">·</span>
-          <a href="https://github.com/LeiPan-JLU/evolutionary-hpo-mlp" target="_blank" rel="noopener">Project Repository</a>
+          <span class="sep">/</span>
+          <a href="https://github.com/LeiPan-JLU" target="_blank" rel="noopener">GitHub</a>
+          <span class="sep">/</span>
+          <span class="muted">Google Scholar (soon)</span>
         </p>
       </div>
+      <div class="portrait" aria-label="LP monogram">
+        <!-- Replace this inline SVG with <img src="images/avatar.jpg" alt="Lei Pan"> when a photo is available. -->
+        <svg viewBox="0 0 150 150" role="img" aria-label="LP monogram">
+          <circle cx="75" cy="75" r="71" fill="#ffffff" stroke="#d9d9d9" stroke-width="1.5"/>
+          <text x="75" y="87" text-anchor="middle" font-family="Lato, Arial, sans-serif"
+                font-size="44" font-weight="400" letter-spacing="1" fill="#1a365d">LP</text>
+        </svg>
+      </div>
     </section>
 
-    <section class="container section" id="education">
-      <div class="section-head">
-        <p class="eyebrow">Education</p>
-        <h2>Jilin University</h2>
-      </div>
-      <div class="card timeline">
-        <div class="timeline-item">
-          <div class="timeline-year">2025 – Present</div>
-          <div>
-            <h3>B.Eng. in Artificial Intelligence</h3>
-            <p>School of Artificial Intelligence, Jilin University, Changchun, China.</p>
-            <p class="muted">Coursework: evolutionary computation, machine learning, optimization, programming.</p>
-          </div>
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li><span class="date">2026.11</span> Completed a course research project on evolutionary hyperparameter optimization for multi-layer perceptrons.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Research &amp; Course Projects</h2>
+
+      <article class="project">
+        <div class="thumb">
+          <img src="images/convergence.png" alt="Convergence curves of five hyperparameter search strategies">
         </div>
-      </div>
-    </section>
-
-    <section class="container section" id="research">
-      <div class="section-head">
-        <p class="eyebrow">Research Interests</p>
-        <h2>What I am exploring</h2>
-      </div>
-      <div class="grid-3">
-        <article class="card">
-          <h3>Evolutionary Computation</h3>
-          <p>Genetic algorithms, particle swarm optimization, differential evolution, and their parameter adaptation mechanisms.</p>
-        </article>
-        <article class="card">
-          <h3>Hyperparameter Optimization</h3>
-          <p>Expensive black-box search for mixed continuous and integer hyperparameters, with small evaluation budgets.</p>
-        </article>
-        <article class="card">
-          <h3>Machine Learning</h3>
-          <p>Small neural networks, cross-validation, and reproducible experiment design on standard datasets.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="container section" id="project">
-      <div class="section-head">
-        <p class="eyebrow">Selected Project</p>
-        <h2>Evolutionary Hyperparameter Optimization for MLP</h2>
-      </div>
-      <article class="card project-card">
-        <div class="project-media">
-          <img src="assets/convergence.png" alt="Convergence curves of five hyperparameter search strategies">
-        </div>
-        <div class="project-body">
+        <div class="project-text">
+          <h3>Evolutionary Hyperparameter Optimization for MLP</h3>
+          <p class="meta">Course project · Evolutionary Computation · 2026</p>
           <p>
-            A reproducible comparison of Random Search, real-coded GA, LDIW-PSO,
-            DE/rand/1/bin, and jDE for tuning a two-layer MLP on the scikit-learn
-            <code>digits</code> dataset. The four-dimensional search space mixes
-            learning rate, L2 penalty, and two hidden-layer sizes; the objective is
-            the 5-fold cross-validation error over 20 independent runs.
+            Compared Random Search, real-coded GA, LDIW-PSO, DE/rand/1/bin, and jDE
+            for tuning a two-layer MLP on the scikit-learn <code>digits</code> dataset.
+            The objective is the 5-fold cross-validation error over a four-dimensional
+            mixed continuous/integer search space.
           </p>
           <p>
-            Real-coded GA reached the lowest mean error (0.0213), followed by
-            DE/rand/1/bin (0.0217) and LDIW-PSO (0.0220). jDE's individual parameter
-            adaptation did not outperform fixed-parameter DE at the 400-evaluation
-            budget, which is discussed as a negative result in the project report.
-          </p>
-          <p class="tags">
-            <span>Python</span><span>NumPy</span><span>scikit-learn</span><span>SciPy</span><span>Matplotlib</span>
+            Across 20 independent runs, real-coded GA achieved the lowest mean error
+            (0.0213), followed by DE/rand/1/bin (0.0217) and LDIW-PSO (0.0220).
+            At the 400-evaluation budget, jDE's parameter adaptation did not outperform
+            fixed-parameter DE.
           </p>
           <p class="links">
-            <a href="https://github.com/LeiPan-JLU/evolutionary-hpo-mlp" target="_blank" rel="noopener">View repository →</a>
+            <a href="https://github.com/LeiPan-JLU/evolutionary-hpo-mlp" target="_blank" rel="noopener">[Code]</a>
           </p>
         </div>
       </article>
+
+      <!--
+      Project template (copy this block when a new project is ready):
+      <article class="project">
+        <div class="thumb">
+          <img src="images/project-2.png" alt="Short project description">
+        </div>
+        <div class="project-text">
+          <h3>Project Title</h3>
+          <p class="meta">Course / Lab · Year</p>
+          <p>One or two sentences describing the problem, method, and quantitative result.</p>
+          <p class="links"><a href="REPOSITORY_URL" target="_blank" rel="noopener">[Code]</a></p>
+        </div>
+      </article>
+      -->
     </section>
 
-    <section class="container section" id="contact">
-      <div class="section-head">
-        <p class="eyebrow">Contact</p>
-        <h2>Get in touch</h2>
-      </div>
-      <div class="card contact-card">
-        <p>I am happy to discuss evolutionary algorithms, hyperparameter optimization, or reproducible machine-learning experiments.</p>
-        <p>
-          <a href="https://github.com/LeiPan-JLU" target="_blank" rel="noopener">github.com/LeiPan-JLU</a>
-          <span aria-hidden="true">·</span>
-          <a href="mailto:LeiPan-JLU@users.noreply.github.com">LeiPan-JLU@users.noreply.github.com</a>
-        </p>
-      </div>
+    <section id="awards">
+      <h2>Competitions &amp; Awards</h2>
+      <!--
+      Replace the placeholder below with real entries, one per line:
+      <ul class="awards">
+        <li><span class="date">2026.10</span> Competition Name — Rank / Award</li>
+      </ul>
+      -->
+      <p class="placeholder">Competition results and awards will be added here when available.</p>
     </section>
+
+    <section id="education">
+      <h2>Education &amp; Coursework</h2>
+      <p>
+        <strong>Jilin University</strong>, Changchun, China<br>
+        B.Eng. in Artificial Intelligence, School of Artificial Intelligence, 2025 – Present.
+      </p>
+      <p class="courses">
+        Selected coursework: Evolutionary Computation, Machine Learning,
+        Data Structures and Algorithms, Linear Algebra, Probability and Statistics.
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 Lei Pan · Design inspired by Jon Barron's academic website.</p>
+    </footer>
+
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Lei Pan · School of Artificial Intelligence, Jilin University</p>
-      <p class="muted">Last updated November 2026</p>
-    </div>
-  </footer>
 </body>
 </html>
