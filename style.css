@@ -154,6 +154,20 @@ p {
   border-radius: 4px;
 }
 
+.placeholder-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 10;
+  padding: 10px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: #f7f7f7;
+  color: #555555;
+  font-size: 13px;
+  text-align: center;
+}
+
 .project-text {
   min-width: 0;
 }
