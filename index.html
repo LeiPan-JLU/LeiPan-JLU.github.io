@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -38,6 +38,7 @@
     <section id="news">
       <h2>News</h2>
       <ul class="news">
+        <li><span class="date">2026.11</span> Completed a training-free adaptive visual prompting study for edge MLLMs; fixed SoM degraded accuracy, while density-aware rendering recovered it.</li>
         <li><span class="date">2026.11</span> Completed a machine learning course project on LSTM–Transformer weather forecasting and validation-learned fusion.</li>
         <li><span class="date">2026.11</span> Completed a course research project on evolutionary hyperparameter optimization for multi-layer perceptrons.</li>
         <li><span class="date">2026.04</span> Initiated provincial-level undergraduate research on physics-informed deep learning for bronze inscription recognition.</li>
@@ -47,6 +48,32 @@
 
     <section id="projects">
       <h2>Research &amp; Course Projects</h2>
+
+      <article class="project">
+        <div class="thumb">
+          <img src="images/avp-main.png" alt="Accuracy of raw, grid, naive SoM, and adaptive SoM on CV-Bench 2D">
+        </div>
+        <div class="project-text">
+          <h3>Density-Aware Adaptive Visual Prompting for Edge MLLMs</h3>
+          <p class="meta">Research project · Multimodal LLMs · 2026</p>
+          <p>
+            Compared raw images, a 3×3 coordinate grid, fixed Set-of-Mark, and a
+            density-aware adaptive SoM renderer on 400 CV-Bench 2D questions with
+            Qwen2-VL-2B-Instruct on an 8 GB laptop GPU.
+          </p>
+          <p>
+            Fixed SoM dropped overall accuracy from 61.5% to 56.8%; density-aware
+            rendering recovered 62.0%, significantly above naive SoM (p=0.0038),
+            while a simple grid remained strongest at 63.2%. The study reports the
+            occlusion trade-off as a boundary result rather than a universal win.
+          </p>
+          <p class="links">
+            <a href="https://github.com/LeiPan-JLU/adaptive-visual-prompting-mllm" target="_blank" rel="noopener">[Code]</a>
+            <span class="sep">/</span>
+            <a href="https://github.com/LeiPan-JLU/adaptive-visual-prompting-mllm/blob/main/paper/main.tex" target="_blank" rel="noopener">[Paper (LaTeX)]</a>
+          </p>
+        </div>
+      </article>
 
       <article class="project">
         <div class="thumb placeholder-card"><span>[CV / Gradio]</span></div>
